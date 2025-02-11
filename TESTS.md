@@ -6,14 +6,6 @@ Guide for testing the `cutting_Rod` program.
 
 ### Test Case 1: Basic Input
 **Input:**
-# Testing `cutting_Rod` Program
-
-Guide for testing the `cutting_Rod` program.
-
-## Test Cases
-
-### Test Case 1: Basic Input
-**Input:**
 Rod length: 5 
 Pieces: 1, 2
         2, 5 
