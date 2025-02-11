@@ -11,7 +11,10 @@ void cutting_Rod(int rodLength, Piece_price pieces[], int size_of_pieces) {
     int max_profit[rodLength + 1]; //stores best profit for each cut 
     int cuts[rodLength + 1]; //stores the lenght of the cut used
 
-    max_profit[0] = 0; 
+    for (int i = 0; i <= rodLength; i++) {
+        max_profit[i] = 0;
+        cuts[i] = 0;
+    }
 
     //Loop thrpught all the possibilities and stored on max_profit the best best price
     for (int i = 1; i <= rodLength; i++) {
@@ -56,7 +59,7 @@ void cutting_Rod(int rodLength, Piece_price pieces[], int size_of_pieces) {
     }
 
     // Print the maximum profit
-    printf("\nValue: %d", max_profit[rodLength]);
+    printf("\nValue: %d\n", max_profit[rodLength]);
 
     // Print remaining if theres any
     if (length > 0) {
